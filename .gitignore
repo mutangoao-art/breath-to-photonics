@@ -18,5 +18,6 @@ results/*
 !results/quantitative_summary.json
 !results/quantitative_detectability.csv
 !results/resolution_sensitivity.csv
+!results/concentration_evidence.csv
 !results/figures/
 !results/figures/*.png

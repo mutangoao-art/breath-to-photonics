@@ -1,0 +1,8 @@
+study,doi,population,compound,summary_type,breath_ppbv_low,breath_ppbv_central,breath_ppbv_high,detection_frequency_percent,ambient_interpretation,use_in_model
+Huzar et al. 2021,10.3390/molecules26061787,"asthma subgroup, n=8",2-butanone,mean_SD,,1.26,,87.5,not quantified in selected table,current engineering anchor; SD 0.80 ppbv
+Huzar et al. 2021,10.3390/molecules26061787,"asthma subgroup, n=8",toluene,mean_SD,,0.89,,50.0,not quantified in selected table,current engineering anchor; SD 0.60 ppbv
+Buszewski et al. 2012,10.1007/s00216-012-6102-8,healthy controls,2-butanone,observed_range,1.35,,3.18,,not reported in extracted table,external range check only
+Buszewski et al. 2012,10.1007/s00216-012-6102-8,healthy controls,toluene,observed_range,1.45,,37.21,,not reported in extracted table,external range check only
+Barker et al. 2006,10.1183/09031936.06.00085105,"healthy controls aged 8-29 years, n=20",toluene,mean,,0.29,,,ambient mean 0.80 ppbv; breath minus ambient -0.51 ppbv,ambient-dominance warning only
+Mochalski et al. 2013,10.1039/c3an36756h,"healthy adults, n=28",2-butanone,qualitative_ambient_comparison,,,,,room air significantly higher than breath,exogenous-origin warning only
+Mochalski et al. 2013,10.1039/c3an36756h,"healthy adults, n=28",toluene,qualitative_ambient_comparison,,,,,breath and room air comparable,exogenous-origin warning only

@@ -59,3 +59,5 @@ NIST QUANT-IR provides compatible absorption coefficients for two of the five ex
 Resolution broadening from approximately 2 to 20 cm⁻¹ retains about 86% of the selected 2-butanone peak but only 34% of the narrower toluene peak. See `docs/RESOLUTION_SENSITIVITY_2026-09-06.md`.
 
 ![Instrument-resolution sensitivity](results/figures/resolution_sensitivity.png)
+
+A cross-study concentration audit confirms a low-ppbv regime and, importantly, shows that 2-butanone and toluene can be comparable to or lower than room-air levels. Any eventual instrument must therefore support paired background measurement rather than absolute breath-only sensing. See `docs/CONCENTRATION_EVIDENCE_2026-09-06.md`.

@@ -26,3 +26,5 @@ No eligibility claim is made until `results/data_audit.json` confirms the actual
 - NIST Chemistry WebBook gas-phase IR spectra: experimental reference spectra
 - NIST Quantitative Infrared Database: quantitative absorption coefficients when available
 - HITRAN/HAPI: line parameters used to generate physics-based synthetic spectra for small molecules and interferents
+
+Downloaded NIST JCAMP files are cached under `data/raw/spectra/nist/` and excluded from Git. Their identity, CAS number, phase and source URL are recorded in `configs/spectral_manifest_v0.1.json`.

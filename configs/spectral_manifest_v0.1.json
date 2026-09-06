@@ -1,0 +1,8 @@
+[
+  {"voc": "X2_Butanone", "name": "2-butanone", "cas": "78-93-3", "nist_id": "C78933", "file": "2-butanone.jdx", "phase": "gas"},
+  {"voc": "Decane", "name": "decane", "cas": "124-18-5", "nist_id": "C124185", "file": "decane.jdx", "phase": "gas"},
+  {"voc": "X2_Heptanone", "name": "2-heptanone", "cas": "110-43-0", "nist_id": "C110430", "file": "2-heptanone.jdx", "phase": "gas"},
+  {"voc": "Toluene", "name": "toluene", "cas": "108-88-3", "nist_id": "C108883", "file": "toluene.jdx", "phase": "gas"},
+  {"voc": "Benzene._1.4_dichloro_", "name": "1,4-dichlorobenzene", "cas": "106-46-7", "nist_id": "C106467", "file": "1,4-dichlorobenzene.jdx", "phase": "gas"}
+]
+

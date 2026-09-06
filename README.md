@@ -41,3 +41,7 @@ The locked v0.1 analysis uses B2 for discovery and B1 for validation. Three part
 The primary analysis found no VOC meeting the locked cross-cohort replication rule. This negative result and the explicitly exploratory follow-up are documented in `docs/PRELIMINARY_RESULTS_2026-09-06.md`.
 
 ![Cross-cohort VOC effect reproducibility](results/figures/cross_cohort_effects.png)
+
+Five exploratory candidates currently have verified experimental gas-phase NIST spectra. The spectra are normalized only for band-location inspection; their amplitudes cannot be compared across compounds. See `docs/SPECTRAL_AUDIT_2026-09-06.md`.
+
+![Experimental NIST gas-phase IR spectra](results/figures/nist_gas_spectra.png)

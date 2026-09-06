@@ -11,5 +11,7 @@ data/interim/*
 results/*
 !results/.gitkeep
 !results/candidate_summary.json
+!results/spectral_summary.json
+!results/spectral_peaks.csv
 !results/figures/
 !results/figures/*.png

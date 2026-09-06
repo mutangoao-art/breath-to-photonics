@@ -1,0 +1,57 @@
+{
+  "spectra_count": 5,
+  "all_gas_phase": true,
+  "coverage": [
+    {
+      "voc": "X2_Butanone",
+      "state": "gas",
+      "y_units": "ABSORBANCE",
+      "points": 880,
+      "range_cm-1": [
+        450.0,
+        3966.0
+      ]
+    },
+    {
+      "voc": "Decane",
+      "state": "gas",
+      "y_units": "ABSORBANCE",
+      "points": 880,
+      "range_cm-1": [
+        450.0,
+        3966.0
+      ]
+    },
+    {
+      "voc": "X2_Heptanone",
+      "state": "gas",
+      "y_units": "ABSORBANCE",
+      "points": 825,
+      "range_cm-1": [
+        550.0,
+        3846.0
+      ]
+    },
+    {
+      "voc": "Toluene",
+      "state": "gas",
+      "y_units": "ABSORBANCE",
+      "points": 880,
+      "range_cm-1": [
+        450.0,
+        3966.0
+      ]
+    },
+    {
+      "voc": "Benzene._1.4_dichloro_",
+      "state": "gas",
+      "y_units": "ABSORBANCE",
+      "points": 880,
+      "range_cm-1": [
+        450.0,
+        3966.0
+      ]
+    }
+  ],
+  "limitation": "NIST WebBook spectra support qualitative band-location comparison. Different measurement conditions and absent concentration/path metadata prevent cross-compound sensitivity or LOD comparison."
+}

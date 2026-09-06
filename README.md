@@ -35,3 +35,9 @@ Raw public data are not committed. See `data/SOURCES.md` for provenance and down
 ## Current status
 
 Project scaffold and reusable data-audit pipeline are in place. The paper and author code confirm a promising public schema, while the current network receives HTTP 403 from Figshare. Dataset eligibility is not assumed until the downloaded files pass the generated audit. See `docs/DATA_AUDIT_2026-09-06.md`.
+
+The locked v0.1 analysis uses B2 for discovery and B1 for validation. Three participants appearing in both files are removed from validation, and repeated visits are averaged within participant before testing. See `configs/analysis_v0.1.json`.
+
+The primary analysis found no VOC meeting the locked cross-cohort replication rule. This negative result and the explicitly exploratory follow-up are documented in `docs/PRELIMINARY_RESULTS_2026-09-06.md`.
+
+![Cross-cohort VOC effect reproducibility](results/figures/cross_cohort_effects.png)

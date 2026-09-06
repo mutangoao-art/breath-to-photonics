@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "overlapping_participants_removed_from_validation": [
+    "ID36",
+    "ID52",
+    "ID53"
+  ],
+  "discovery_participants": 62,
+  "validation_participants": 49,
+  "tested_vocs": 142,
+  "discovery_candidates": 1,
+  "replicated_candidates": 0,
+  "exploratory_direction_consistent_vocs": 18,
+  "warning": "Exploratory observational effects are not validated biomarkers or causal findings."
+}

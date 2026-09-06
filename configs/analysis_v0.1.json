@@ -1,0 +1,19 @@
+{
+  "version": "0.1",
+  "locked_before_candidate_analysis": true,
+  "discovery_file": "RADicA_BG_adjusted_B2_outl_removed.csv",
+  "validation_file": "RADicA_BG_adjusted_B1_outl_removed.csv",
+  "participant_column": "ID",
+  "diagnosis_column": "Diagnosis",
+  "positive_group": "Asthma",
+  "negative_group": "Not Asthma",
+  "repeated_visit_policy": "mean within participant",
+  "overlap_policy": "keep in discovery and remove from validation",
+  "discovery_fdr_threshold": 0.10,
+  "discovery_absolute_hedges_g_threshold": 0.50,
+  "validation_absolute_hedges_g_threshold": 0.20,
+  "bootstrap_iterations": 2000,
+  "random_seed": 20260906,
+  "candidate_rule": "discovery q <= 0.10 and abs(g) >= 0.50; replicated if validation sign agrees and abs(g) >= 0.20"
+}
+

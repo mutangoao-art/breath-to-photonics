@@ -48,3 +48,11 @@ Gas-phase water (CAS 7732-18-5) and carbon dioxide (CAS 124-38-9) JCAMP records 
 - Relevant values: asthma-subgroup mean (SD) 2-butanone 1.26 (0.80) ppbv and toluene 0.89 (0.60) ppbv
 - Detection frequencies in asthma samples: 87.5% and 50.0%, respectively
 - Limitation: asthma subgroup n=8; these values anchor an engineering scenario and are not treated as population reference intervals
+
+## HITRAN quantitative interferents
+
+- Intended source: HITRAN2024 line-by-line parameters for H2O and CO2, https://hitran.org/lbl/
+- Official calculation interface: HAPI, https://hitran.org/hapi/
+- Current status: not downloaded; HITRAN states that an account API key is required
+- Reason for not substituting the cached NIST references: those H2O/CO2 files report absorbance without concentration and path metadata, so they cannot be scaled to humid-breath conditions
+- No credential should be committed; downloaded line data will remain under `data/raw/`

@@ -17,5 +17,6 @@ results/*
 !results/interference_windows.csv
 !results/quantitative_summary.json
 !results/quantitative_detectability.csv
+!results/resolution_sensitivity.csv
 !results/figures/
 !results/figures/*.png

@@ -55,3 +55,7 @@ A qualitative interference screen compares those normalized target shapes with g
 NIST QUANT-IR provides compatible absorption coefficients for two of the five exploratory targets: 2-butanone and toluene. At independent literature asthma means of 1.26 and 0.89 ppbv, respectively, a target-only Beer–Lambert bound predicts only about 0.000780% and 0.00161% peak attenuation over 10 m. The concentration evidence comes from a small eight-person asthma subgroup, and the calculations remain bounds rather than detection limits. See `docs/QUANTITATIVE_BOUNDS_2026-09-06.md`.
 
 ![Target-only quantitative Beer-Lambert bounds](results/figures/quantitative_detectability.png)
+
+Resolution broadening from approximately 2 to 20 cm⁻¹ retains about 86% of the selected 2-butanone peak but only 34% of the narrower toluene peak. See `docs/RESOLUTION_SENSITIVITY_2026-09-06.md`.
+
+![Instrument-resolution sensitivity](results/figures/resolution_sensitivity.png)

@@ -1,8 +1,18 @@
 # RADicA data audit — 2026-09-06
 
-## Gate result: pending download, promising schema
+## Gate result: structural eligibility passed
 
-The primary dataset has not yet passed the field-level eligibility gate because the Figshare API, DOI landing page, and bulk-download endpoint returned HTTP 403 from the current execution network. No HTML error page was saved as data.
+The user manually downloaded the four public files after automated Figshare access returned HTTP 403. They are stored under `data/raw/radica/` and excluded from Git. The dataset-specific automated audit now passes all structural checks.
+
+Observed release summary:
+
+- raw peak table: 1,548 rows and 312 VOC columns across batches 1–6;
+- metadata: 1,038 rows, 112 participants (68 asthma; 44 not asthma);
+- 346 participant-visit groups, all containing one matched room-air sample and two breath replicates;
+- processed B1: 91 participant-visits from 52 participants (33 asthma; 19 not asthma);
+- processed B2: 105 participant-visits from 62 participants (37 asthma; 25 not asthma);
+- B1 and B2 have disjoint participants and the same 142 processed VOC columns;
+- the supplied processed VOC matrices contain no missing values.
 
 ## What is independently verified
 
@@ -23,18 +33,14 @@ From the author's public analysis scripts:
 - zero peak areas are treated as missing in the published pipeline;
 - the published correction models log breath signal against log background signal and diagnosis.
 
-## What still must be checked in the downloaded release
+## What still must be checked before statistical selection
 
 - exact file version and licence;
-- participant counts by cohort and diagnosis;
-- whether every breath sample has a usable matched room-air sample;
 - chemical annotation fields, names, and CAS identifiers;
 - detection-limit encoding versus true absence;
 - duplicate samples and repeated visits;
-- whether public diagnosis metadata are sufficient for our independent validation design;
 - whether the two campaigns can legitimately be treated as discovery and validation cohorts for the proposed question.
 
 ## Decision
 
-Keep RADicA as the primary candidate, but do not begin candidate-VOC statistics until the actual files pass the automated and manual checks above. If access remains blocked or essential fields are absent, switch to the documented Kuo fallback and revise the scientific claim accordingly.
-
+Keep RADicA as the primary dataset. The next gate is analytical rather than structural: lock which cohort is discovery versus validation, decide whether to start from author-adjusted matrices or independently reproduce preprocessing from the raw table, and document how repeated visits will be handled before inspecting candidate effects.

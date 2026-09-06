@@ -1,0 +1,29 @@
+{
+  "covered_targets": [
+    {
+      "voc": "X2_Butanone",
+      "name": "2-butanone",
+      "cas": "78-93-3",
+      "file": "2-butanone_2cm-1_boxcar.jdx",
+      "window_center_cm-1": 1174.0
+    },
+    {
+      "voc": "Toluene",
+      "name": "toluene",
+      "cas": "108-88-3",
+      "file": "toluene_2cm-1_boxcar.jdx",
+      "window_center_cm-1": 726.0
+    }
+  ],
+  "uncovered_targets": [
+    {"voc": "Decane", "name": "decane", "cas": "124-18-5"},
+    {"voc": "X2_Heptanone", "name": "2-heptanone", "cas": "110-43-0"},
+    {"voc": "Benzene._1.4_dichloro_", "name": "1,4-dichlorobenzene", "cas": "106-46-7"}
+  ],
+  "window_half_width_cm-1": 20.0,
+  "concentrations_ppb": [1.0, 10.0, 100.0, 1000.0],
+  "path_lengths_m": [1.0, 10.0, 100.0],
+  "reference_concentration_ppb": 100.0,
+  "reference_path_m": 10.0,
+  "target_attenuation_fraction": 0.01
+}

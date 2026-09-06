@@ -34,7 +34,7 @@ Raw public data are not committed. See `data/SOURCES.md` for provenance and down
 
 ## Current status
 
-Project scaffold and reusable data-audit pipeline are in place. The paper and author code confirm a promising public schema, while the current network receives HTTP 403 from Figshare. Dataset eligibility is not assumed until the downloaded files pass the generated audit. See `docs/DATA_AUDIT_2026-09-06.md`.
+The manually downloaded RADicA release passed the structural audit: 112 participants, 346 participant-visits, matched MaskBG/S1/S2 samples, and 142 shared processed VOC columns across B1 and B2. See `docs/DATA_AUDIT_2026-09-06.md`.
 
 The locked v0.1 analysis uses B2 for discovery and B1 for validation. Three participants appearing in both files are removed from validation, and repeated visits are averaged within participant before testing. See `configs/analysis_v0.1.json`.
 
@@ -49,3 +49,7 @@ Five exploratory candidates currently have verified experimental gas-phase NIST 
 A qualitative interference screen compares those normalized target shapes with gas-phase H2O and CO2 references. It identifies candidate windows for further study, but does not establish selectivity, sensitivity, concentration response, or detection limits. See `docs/INTERFERENCE_SCREEN_2026-09-06.md`.
 
 ![Qualitative H2O and CO2 interference screen](results/figures/interference_windows.png)
+
+NIST QUANT-IR provides compatible absorption coefficients for two of the five exploratory targets: 2-butanone and toluene. A target-only Beer–Lambert parameter sweep now bounds the optical path needed before adding breath-matrix and instrument effects. At 100 ppb and 10 m, predicted peak attenuation is approximately 0.062% and 0.180%, respectively. These values are scenario calculations, not measured breath concentrations or detection limits. See `docs/QUANTITATIVE_BOUNDS_2026-09-06.md`.
+
+![Target-only quantitative Beer-Lambert bounds](results/figures/quantitative_detectability.png)

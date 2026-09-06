@@ -30,3 +30,13 @@ No eligibility claim is made until `results/data_audit.json` confirms the actual
 Downloaded NIST JCAMP files are cached under `data/raw/spectra/nist/` and excluded from Git. Their identity, CAS number, phase and source URL are recorded in `configs/spectral_manifest_v0.1.json`.
 
 Gas-phase water (CAS 7732-18-5) and carbon dioxide (CAS 124-38-9) JCAMP records are also cached in that directory. Their provenance and their role as qualitative interferents are recorded in `configs/interference_manifest_v0.1.json`.
+
+## Quantitative spectral references
+
+- Source: NIST Quantitative Infrared Database, https://webbook.nist.gov/chemistry/quant-ir/
+- Local location: `data/raw/spectra/nist-quant/` (excluded from Git)
+- Selected format: gas-phase absorption coefficient, Boxcar apodization, nominal 2 cm⁻¹ entry (JCAMP metadata report 1.929 cm⁻¹)
+- Covered exploratory targets: 2-butanone and toluene
+- Not present in the NIST Quantitative IR species table: decane, 2-heptanone, and 1,4-dichlorobenzene
+- Coefficient units: `(micromol/mol)-1 m-1 (base 10)`, so concentration in ppm and path in metres can be used directly in the NIST Beer–Lambert convention
+- Coverage and scenario assumptions are locked in `configs/quantitative_manifest_v0.1.json`

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -26,7 +27,7 @@ def read_jcamp(path: Path) -> tuple[dict[str, str], pd.DataFrame]:
             data_lines.append(line)
     if headers.get("STATE", "").casefold() != "gas":
         raise ValueError(f"{path.name} is not labelled as a gas-phase spectrum")
-    if headers.get("XUNITS", "").upper() != "1/CM":
+    if headers.get("XUNITS", "").upper() not in {"1/CM", "CM-1"}:
         raise ValueError(f"{path.name} does not use wavenumber units")
 
     delta_x = float(headers["DELTAX"]) * float(headers.get("XFACTOR", "1"))
@@ -35,7 +36,9 @@ def read_jcamp(path: Path) -> tuple[dict[str, str], pd.DataFrame]:
     xs: list[float] = []
     ys: list[float] = []
     for line in data_lines:
-        values = [float(value) for value in line.split()]
+        # JCAMP AFFN permits adjacent signed values such as ``491496-1278016``.
+        tokens = re.findall(r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[Ee][+-]?\d+)?", line)
+        values = [float(value) for value in tokens]
         start = values[0] * x_factor
         for index, value in enumerate(values[1:]):
             xs.append(start + index * delta_x)
@@ -122,4 +125,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,56 @@
+{
+  "status": "partial_target_only_bound",
+  "quantitative_coverage": "2/5",
+  "covered_targets": [
+    {
+      "voc": "X2_Butanone",
+      "name": "2-butanone",
+      "cas": "78-93-3",
+      "window_center_cm-1": 1174.0,
+      "window_half_width_cm-1": 20.0,
+      "resolution_cm-1": 1.929,
+      "peak_coefficient_per_ppm_m": 0.000268629606102,
+      "window_mean_coefficient_per_ppm_m": 0.00020100448662171427,
+      "reference_ppb": 100.0,
+      "reference_path_m": 10.0,
+      "peak_attenuation_fraction": 0.0006183512685544734,
+      "window_mean_attenuation_fraction": 0.0004627228452679377,
+      "path_m_for_target_attenuation_peak": 162.48415302342923,
+      "path_m_for_target_attenuation_window_mean": 217.14965052817703
+    },
+    {
+      "voc": "Toluene",
+      "name": "toluene",
+      "cas": "108-88-3",
+      "window_center_cm-1": 726.0,
+      "window_half_width_cm-1": 20.0,
+      "resolution_cm-1": 1.929,
+      "peak_coefficient_per_ppm_m": 0.00078370391814,
+      "window_mean_coefficient_per_ppm_m": 0.0002187050923409268,
+      "reference_ppb": 100.0,
+      "reference_path_m": 10.0,
+      "peak_attenuation_fraction": 0.0018029177469149893,
+      "window_mean_attenuation_fraction": 0.0005034603066921273,
+      "path_m_for_target_attenuation_peak": 55.69457165416857,
+      "path_m_for_target_attenuation_window_mean": 199.5749324229746
+    }
+  ],
+  "uncovered_targets": [
+    {
+      "voc": "Decane",
+      "name": "decane",
+      "cas": "124-18-5"
+    },
+    {
+      "voc": "X2_Heptanone",
+      "name": "2-heptanone",
+      "cas": "110-43-0"
+    },
+    {
+      "voc": "Benzene._1.4_dichloro_",
+      "name": "1,4-dichlorobenzene",
+      "cas": "106-46-7"
+    }
+  ],
+  "warning": "Target-only Beer-Lambert bounds are not LODs and exclude H2O, CO2, other VOCs, noise, drift, and sampling losses."
+}

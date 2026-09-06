@@ -45,7 +45,7 @@ def summarize_target(root: Path, item: dict[str, object], config: dict[str, obje
     positive = window["absorbance"].clip(lower=0.0)
     peak_coefficient = float(positive.max())
     mean_coefficient = float(positive.mean())
-    reference_ppb = float(config["reference_concentration_ppb"])
+    reference_ppb = float(item["evidence_reference_ppb"])
     reference_path = float(config["reference_path_m"])
     target_loss = float(config["target_attenuation_fraction"])
 
@@ -59,6 +59,8 @@ def summarize_target(root: Path, item: dict[str, object], config: dict[str, obje
         "peak_coefficient_per_ppm_m": peak_coefficient,
         "window_mean_coefficient_per_ppm_m": mean_coefficient,
         "reference_ppb": reference_ppb,
+        "reference_sd_ppb": float(item["evidence_sd_ppb"]),
+        "reference_detection_frequency_percent": float(item["evidence_detection_frequency_percent"]),
         "reference_path_m": reference_path,
         "peak_attenuation_fraction": 1.0 - transmission(peak_coefficient, reference_ppb, reference_path),
         "window_mean_attenuation_fraction": 1.0 - transmission(mean_coefficient, reference_ppb, reference_path),
@@ -89,15 +91,18 @@ def plot_detectability(summaries: list[dict[str, object]], concentrations: list[
         coefficient = float(summary["peak_coefficient_per_ppm_m"])
         for concentration in concentrations:
             loss = 1.0 - np.power(10.0, -coefficient * (concentration / 1000.0) * paths)
-            ax.plot(paths, loss * 100.0, label=f"{concentration:g} ppb")
+            ax.plot(paths, loss * 100.0, linewidth=0.9, alpha=0.55, label=f"{concentration:g} ppb scenario")
+        evidence_ppb = float(summary["reference_ppb"])
+        evidence_loss = 1.0 - np.power(10.0, -coefficient * (evidence_ppb / 1000.0) * paths)
+        ax.plot(paths, evidence_loss * 100.0, color="#c62828", linewidth=2.2, label=f"asthma mean {evidence_ppb:g} ppbv")
         ax.axhline(1.0, color="black", linestyle="--", linewidth=0.8, label="1% attenuation")
         ax.set_xscale("log")
         ax.set_yscale("log")
         ax.set_title(f"{summary['name']} at {summary['window_center_cm-1']:.0f} cm$^{{-1}}$")
         ax.set_xlabel("Optical path (m)")
         ax.grid(alpha=0.2, which="both")
+        ax.legend(frameon=False, fontsize=7, loc="lower right")
     axes[0, 0].set_ylabel("Peak attenuation (%)")
-    axes[0, -1].legend(frameon=False, fontsize=8)
     fig.suptitle("NIST QUANT-IR Beer–Lambert bounds (target-only; no breath matrix)")
     fig.tight_layout()
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -117,6 +122,7 @@ def run(root: Path, config: dict[str, object]) -> tuple[pd.DataFrame, dict[str, 
         "quantitative_coverage": f"{len(summaries)}/{len(summaries) + len(config['uncovered_targets'])}",
         "covered_targets": summaries,
         "uncovered_targets": config["uncovered_targets"],
+        "concentration_evidence": config["concentration_evidence"],
         "warning": "Target-only Beer-Lambert bounds are not LODs and exclude H2O, CO2, other VOCs, noise, drift, and sampling losses.",
     }
     return pd.DataFrame(rows), output_summary

@@ -11,12 +11,14 @@
       "resolution_cm-1": 1.929,
       "peak_coefficient_per_ppm_m": 0.000268629606102,
       "window_mean_coefficient_per_ppm_m": 0.00020100448662171427,
-      "reference_ppb": 100.0,
+      "reference_ppb": 1.26,
+      "reference_sd_ppb": 0.8,
+      "reference_detection_frequency_percent": 87.5,
       "reference_path_m": 10.0,
-      "peak_attenuation_fraction": 0.0006183512685544734,
-      "window_mean_attenuation_fraction": 0.0004627228452679377,
-      "path_m_for_target_attenuation_peak": 162.48415302342923,
-      "path_m_for_target_attenuation_window_mean": 217.14965052817703
+      "peak_attenuation_fraction": 7.793605464212483e-06,
+      "window_mean_attenuation_fraction": 5.831640170872454e-06,
+      "path_m_for_target_attenuation_peak": 12895.56770027216,
+      "path_m_for_target_attenuation_window_mean": 17234.099248268012
     },
     {
       "voc": "Toluene",
@@ -27,12 +29,14 @@
       "resolution_cm-1": 1.929,
       "peak_coefficient_per_ppm_m": 0.00078370391814,
       "window_mean_coefficient_per_ppm_m": 0.0002187050923409268,
-      "reference_ppb": 100.0,
+      "reference_ppb": 0.89,
+      "reference_sd_ppb": 0.6,
+      "reference_detection_frequency_percent": 50.0,
       "reference_path_m": 10.0,
-      "peak_attenuation_fraction": 0.0018029177469149893,
-      "window_mean_attenuation_fraction": 0.0005034603066921273,
-      "path_m_for_target_attenuation_peak": 55.69457165416857,
-      "path_m_for_target_attenuation_window_mean": 199.5749324229746
+      "peak_attenuation_fraction": 1.6060321168853697e-05,
+      "window_mean_attenuation_fraction": 4.4819150161190535e-06,
+      "path_m_for_target_attenuation_peak": 6257.81703979422,
+      "path_m_for_target_attenuation_window_mean": 22424.14971044658
     }
   ],
   "uncovered_targets": [
@@ -52,5 +56,12 @@
       "cas": "106-46-7"
     }
   ],
+  "concentration_evidence": {
+    "citation": "Huzar et al., Needle Trap Device-GC-MS for Characterization of Lung Diseases Based on Breath VOC Profiles, Molecules 2021, 26, 1787",
+    "doi": "10.3390/molecules26061787",
+    "population": "asthma subgroup, n=8",
+    "units": "ppbv",
+    "statistic": "mean (SD) among the reported asthma cohort; non-detect frequency retained separately"
+  },
   "warning": "Target-only Beer-Lambert bounds are not LODs and exclude H2O, CO2, other VOCs, noise, drift, and sampling losses."
 }

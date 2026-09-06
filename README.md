@@ -32,6 +32,8 @@ pytest
 
 Raw public data are not committed. See `data/SOURCES.md` for provenance and download status.
 
+For the distinction between the original plan, evidence-driven adjustments, and remaining work, see `docs/STATUS_AND_ROADMAP_2026-09-06.md`.
+
 ## Current status
 
 The manually downloaded RADicA release passed the structural audit: 112 participants, 346 participant-visits, matched MaskBG/S1/S2 samples, and 142 shared processed VOC columns across B1 and B2. See `docs/DATA_AUDIT_2026-09-06.md`.
@@ -50,6 +52,6 @@ A qualitative interference screen compares those normalized target shapes with g
 
 ![Qualitative H2O and CO2 interference screen](results/figures/interference_windows.png)
 
-NIST QUANT-IR provides compatible absorption coefficients for two of the five exploratory targets: 2-butanone and toluene. A target-only Beer–Lambert parameter sweep now bounds the optical path needed before adding breath-matrix and instrument effects. At 100 ppb and 10 m, predicted peak attenuation is approximately 0.062% and 0.180%, respectively. These values are scenario calculations, not measured breath concentrations or detection limits. See `docs/QUANTITATIVE_BOUNDS_2026-09-06.md`.
+NIST QUANT-IR provides compatible absorption coefficients for two of the five exploratory targets: 2-butanone and toluene. At independent literature asthma means of 1.26 and 0.89 ppbv, respectively, a target-only Beer–Lambert bound predicts only about 0.000780% and 0.00161% peak attenuation over 10 m. The concentration evidence comes from a small eight-person asthma subgroup, and the calculations remain bounds rather than detection limits. See `docs/QUANTITATIVE_BOUNDS_2026-09-06.md`.
 
 ![Target-only quantitative Beer-Lambert bounds](results/figures/quantitative_detectability.png)

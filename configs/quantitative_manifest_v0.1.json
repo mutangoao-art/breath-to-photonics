@@ -5,14 +5,20 @@
       "name": "2-butanone",
       "cas": "78-93-3",
       "file": "2-butanone_2cm-1_boxcar.jdx",
-      "window_center_cm-1": 1174.0
+      "window_center_cm-1": 1174.0,
+      "evidence_reference_ppb": 1.26,
+      "evidence_sd_ppb": 0.80,
+      "evidence_detection_frequency_percent": 87.5
     },
     {
       "voc": "Toluene",
       "name": "toluene",
       "cas": "108-88-3",
       "file": "toluene_2cm-1_boxcar.jdx",
-      "window_center_cm-1": 726.0
+      "window_center_cm-1": 726.0,
+      "evidence_reference_ppb": 0.89,
+      "evidence_sd_ppb": 0.60,
+      "evidence_detection_frequency_percent": 50.0
     }
   ],
   "uncovered_targets": [
@@ -21,9 +27,15 @@
     {"voc": "Benzene._1.4_dichloro_", "name": "1,4-dichlorobenzene", "cas": "106-46-7"}
   ],
   "window_half_width_cm-1": 20.0,
-  "concentrations_ppb": [1.0, 10.0, 100.0, 1000.0],
+  "concentrations_ppb": [0.5, 1.0, 3.0, 10.0, 40.0],
   "path_lengths_m": [1.0, 10.0, 100.0],
-  "reference_concentration_ppb": 100.0,
   "reference_path_m": 10.0,
-  "target_attenuation_fraction": 0.01
+  "target_attenuation_fraction": 0.01,
+  "concentration_evidence": {
+    "citation": "Huzar et al., Needle Trap Device-GC-MS for Characterization of Lung Diseases Based on Breath VOC Profiles, Molecules 2021, 26, 1787",
+    "doi": "10.3390/molecules26061787",
+    "population": "asthma subgroup, n=8",
+    "units": "ppbv",
+    "statistic": "mean (SD) among the reported asthma cohort; non-detect frequency retained separately"
+  }
 }

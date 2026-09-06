@@ -40,3 +40,11 @@ Gas-phase water (CAS 7732-18-5) and carbon dioxide (CAS 124-38-9) JCAMP records 
 - Not present in the NIST Quantitative IR species table: decane, 2-heptanone, and 1,4-dichlorobenzene
 - Coefficient units: `(micromol/mol)-1 m-1 (base 10)`, so concentration in ppm and path in metres can be used directly in the NIST Beer–Lambert convention
 - Coverage and scenario assumptions are locked in `configs/quantitative_manifest_v0.1.json`
+
+## Breath concentration anchor
+
+- Source: Huzar et al., *Needle Trap Device-GC-MS for Characterization of Lung Diseases Based on Breath VOC Profiles*, Molecules 2021, 26, 1787
+- DOI: https://doi.org/10.3390/molecules26061787
+- Relevant values: asthma-subgroup mean (SD) 2-butanone 1.26 (0.80) ppbv and toluene 0.89 (0.60) ppbv
+- Detection frequencies in asthma samples: 87.5% and 50.0%, respectively
+- Limitation: asthma subgroup n=8; these values anchor an engineering scenario and are not treated as population reference intervals

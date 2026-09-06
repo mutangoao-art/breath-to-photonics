@@ -11,7 +11,7 @@
 - Author analysis code: https://github.com/aturlo/RADicA-breath-VOC-analysis
 - Expected public filenames confirmed by the author code: `RADicA_VOC_raw_peak_data.csv` and `RADicA_VOC_metadata.csv`
 - Local location: `data/raw/radica/` (manually downloaded; excluded from Git)
-- Status: structural audit passed on 2026-09-06; see `docs/DATA_AUDIT_2026-09-06.md`
+- Status: required structures are present; split design needs review because three participants overlap B1/B2; see `docs/DATA_AUDIT_2026-09-06.md`
 
 No eligibility claim is made until `results/data_audit.json` confirms the actual public files and fields.
 

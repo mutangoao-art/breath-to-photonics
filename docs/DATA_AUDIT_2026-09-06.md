@@ -1,8 +1,8 @@
 # RADicA data audit — 2026-09-06
 
-## Gate result: structural eligibility passed
+## Gate result: data usable, split design needs revision
 
-The user manually downloaded the four public files after automated Figshare access returned HTTP 403. They are stored under `data/raw/radica/` and excluded from Git. The dataset-specific automated audit now passes all structural checks.
+The user manually downloaded the four public files after automated Figshare access returned HTTP 403. They are stored under `data/raw/radica/` and excluded from Git. All required structures are present, but the dataset-specific audit correctly returns `needs_review` because B1 and B2 are not fully participant-independent.
 
 Observed release summary:
 
@@ -11,7 +11,8 @@ Observed release summary:
 - 346 participant-visit groups, all containing one matched room-air sample and two breath replicates;
 - processed B1: 91 participant-visits from 52 participants (33 asthma; 19 not asthma);
 - processed B2: 105 participant-visits from 62 participants (37 asthma; 25 not asthma);
-- B1 and B2 have disjoint participants and the same 142 processed VOC columns;
+- B1 and B2 have the same 142 processed VOC columns;
+- three participants overlap: ID36, ID52, and ID53 have CV1 in B1 and CV2 in B2;
 - the supplied processed VOC matrices contain no missing values.
 
 ## What is independently verified
@@ -43,4 +44,4 @@ From the author's public analysis scripts:
 
 ## Decision
 
-Keep RADicA as the primary dataset. The next gate is analytical rather than structural: lock which cohort is discovery versus validation, decide whether to start from author-adjusted matrices or independently reproduce preprocessing from the raw table, and document how repeated visits will be handled before inspecting candidate effects.
+Keep RADicA as the primary dataset. Do not treat B1 and B2 as independent without adjustment. Before inspecting candidate effects, assign each overlapping participant wholly to one partition or exclude those participants, lock which cohort is discovery versus validation, decide whether to use the author-adjusted matrices or reproduce preprocessing, and document how repeated visits will be handled.

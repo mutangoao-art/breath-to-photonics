@@ -36,13 +36,14 @@ def audit_radica(root: Path) -> dict[str, object]:
     complete_pairs = int((sample_sets == required_samples).sum())
     voc_b1 = set(b1.columns) - IDENTIFIERS
     voc_b2 = set(b2.columns) - IDENTIFIERS
+    overlapping_participants = sorted(set(b1["ID"]) & set(b2["ID"]))
     checks = {
         "required_files_present": True,
         "diagnosis_has_two_classes": meta["Diagnosis"].nunique() == 2,
         "all_id_visits_have_background_and_two_breath_replicates": complete_pairs == len(sample_sets),
         "processed_cohorts_have_identical_voc_columns": voc_b1 == voc_b2,
         "processed_data_have_no_missing_voc_values": not (b1[list(voc_b1)].isna().any().any() or b2[list(voc_b2)].isna().any().any()),
-        "processed_cohorts_have_disjoint_participants": set(b1["ID"]).isdisjoint(set(b2["ID"])),
+        "processed_cohorts_have_disjoint_participants": not overlapping_participants,
     }
     return {
         "status": "pass" if all(checks.values()) else "needs_review",
@@ -64,8 +65,9 @@ def audit_radica(root: Path) -> dict[str, object]:
             "B1": {"rows": int(len(b1)), "participants": int(b1["ID"].nunique()), "participants_by_diagnosis": _participant_counts(b1)},
             "B2": {"rows": int(len(b2)), "participants": int(b2["ID"].nunique()), "participants_by_diagnosis": _participant_counts(b2)},
             "shared_voc_columns": int(len(voc_b1 & voc_b2)),
+            "overlapping_participants": overlapping_participants,
         },
-        "interpretation": "Structural eligibility passed. Cohort role, preprocessing provenance, and statistical analysis plan still require explicit locking before candidate selection.",
+        "interpretation": "Required data are present, but B1/B2 are not participant-independent. The three overlapping participants must be assigned wholly to one analysis partition or excluded before validation.",
     }
 
 
@@ -82,4 +84,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

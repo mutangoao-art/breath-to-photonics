@@ -12,7 +12,7 @@ The first milestone is deliberately narrow: download and audit the public RADicA
 2. Correct breath signals using matched ambient-air samples.
 3. Select candidates in a discovery cohort and test effect direction in an untouched validation cohort.
 4. Match validated candidates to experimental gas-phase IR reference spectra.
-5. rank candidates by clinical reproducibility, spectral selectivity against H2O/CO2, and measurement complexity.
+5. Rank candidates by clinical reproducibility, spectral selectivity against H2O/CO2, and measurement complexity.
 
 The project will keep three evidence types separate:
 
@@ -45,3 +45,7 @@ The primary analysis found no VOC meeting the locked cross-cohort replication ru
 Five exploratory candidates currently have verified experimental gas-phase NIST spectra. The spectra are normalized only for band-location inspection; their amplitudes cannot be compared across compounds. See `docs/SPECTRAL_AUDIT_2026-09-06.md`.
 
 ![Experimental NIST gas-phase IR spectra](results/figures/nist_gas_spectra.png)
+
+A qualitative interference screen compares those normalized target shapes with gas-phase H2O and CO2 references. It identifies candidate windows for further study, but does not establish selectivity, sensitivity, concentration response, or detection limits. See `docs/INTERFERENCE_SCREEN_2026-09-06.md`.
+
+![Qualitative H2O and CO2 interference screen](results/figures/interference_windows.png)

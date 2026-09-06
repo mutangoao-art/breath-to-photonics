@@ -1,0 +1,15 @@
+{
+  "targets": [
+    {"voc": "X2_Butanone", "name": "2-butanone", "cas": "78-93-3", "file": "2-butanone.jdx"},
+    {"voc": "Decane", "name": "decane", "cas": "124-18-5", "file": "decane.jdx"},
+    {"voc": "X2_Heptanone", "name": "2-heptanone", "cas": "110-43-0", "file": "2-heptanone.jdx"},
+    {"voc": "Toluene", "name": "toluene", "cas": "108-88-3", "file": "toluene.jdx"},
+    {"voc": "Benzene._1.4_dichloro_", "name": "1,4-dichlorobenzene", "cas": "106-46-7", "file": "1,4-dichlorobenzene.jdx"}
+  ],
+  "interferents": [
+    {"name": "water vapour", "cas": "7732-18-5", "file": "water.jdx"},
+    {"name": "carbon dioxide", "cas": "124-38-9", "file": "carbon-dioxide.jdx"}
+  ],
+  "window_half_width_cm-1": 20.0,
+  "minimum_peak_prominence": 0.05
+}

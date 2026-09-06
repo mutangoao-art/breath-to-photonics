@@ -1,0 +1,38 @@
+{
+  "status": "qualitative_only",
+  "targets_screened": 5,
+  "window_half_width_cm-1": 20.0,
+  "best_windows": [
+    {
+      "voc": "Benzene._1.4_dichloro_",
+      "center_cm-1": 1094.0,
+      "center_um": 9.141,
+      "shape_separation_proxy": 8.3195
+    },
+    {
+      "voc": "Decane",
+      "center_cm-1": 2934.0,
+      "center_um": 3.408,
+      "shape_separation_proxy": 0.9524
+    },
+    {
+      "voc": "Toluene",
+      "center_cm-1": 726.0,
+      "center_um": 13.774,
+      "shape_separation_proxy": 7.8678
+    },
+    {
+      "voc": "X2_Butanone",
+      "center_cm-1": 1174.0,
+      "center_um": 8.518,
+      "shape_separation_proxy": 1.0908
+    },
+    {
+      "voc": "X2_Heptanone",
+      "center_cm-1": 2942.0,
+      "center_um": 3.399,
+      "shape_separation_proxy": 0.9524
+    }
+  ],
+  "warning": "Scores compare normalized spectral shapes, not concentration-weighted absorbance. They cannot establish selectivity, sensitivity, or LOD."
+}

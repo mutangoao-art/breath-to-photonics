@@ -13,5 +13,7 @@ results/*
 !results/candidate_summary.json
 !results/spectral_summary.json
 !results/spectral_peaks.csv
+!results/interference_summary.json
+!results/interference_windows.csv
 !results/figures/
 !results/figures/*.png

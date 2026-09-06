@@ -28,3 +28,5 @@ No eligibility claim is made until `results/data_audit.json` confirms the actual
 - HITRAN/HAPI: line parameters used to generate physics-based synthetic spectra for small molecules and interferents
 
 Downloaded NIST JCAMP files are cached under `data/raw/spectra/nist/` and excluded from Git. Their identity, CAS number, phase and source URL are recorded in `configs/spectral_manifest_v0.1.json`.
+
+Gas-phase water (CAS 7732-18-5) and carbon dioxide (CAS 124-38-9) JCAMP records are also cached in that directory. Their provenance and their role as qualitative interferents are recorded in `configs/interference_manifest_v0.1.json`.

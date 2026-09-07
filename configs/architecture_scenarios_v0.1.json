@@ -1,0 +1,49 @@
+{
+  "source_table": "results/alternative_windows.csv",
+  "use_rank_within_voc": 1,
+  "baseline_path_m": 10.0,
+  "required_snr": 3.0,
+  "reference_concentrations_ppb": {
+    "Toluene": 0.89,
+    "X2_Butanone": 1.26
+  },
+  "scenarios": [
+    {
+      "architecture": "direct_multipass",
+      "scenario": "10 m baseline",
+      "effective_path_m": 10.0,
+      "target_enrichment_factor": 1.0,
+      "target_recovery_fraction": 1.0,
+      "atmospheric_background_residual_fraction": 1.0,
+      "relative_transmission_noise_ppm": 1.0
+    },
+    {
+      "architecture": "direct_multipass",
+      "scenario": "100 m idealized",
+      "effective_path_m": 100.0,
+      "target_enrichment_factor": 1.0,
+      "target_recovery_fraction": 1.0,
+      "atmospheric_background_residual_fraction": 1.0,
+      "relative_transmission_noise_ppm": 1.0
+    },
+    {
+      "architecture": "cavity_enhanced",
+      "scenario": "1000 m effective path idealized",
+      "effective_path_m": 1000.0,
+      "target_enrichment_factor": 1.0,
+      "target_recovery_fraction": 1.0,
+      "atmospheric_background_residual_fraction": 1.0,
+      "relative_transmission_noise_ppm": 1.0
+    },
+    {
+      "architecture": "preconcentration_assisted",
+      "scenario": "100x enrichment, 80% recovery",
+      "effective_path_m": 10.0,
+      "target_enrichment_factor": 100.0,
+      "target_recovery_fraction": 0.8,
+      "atmospheric_background_residual_fraction": 0.01,
+      "relative_transmission_noise_ppm": 1.0
+    }
+  ],
+  "warning": "Engineering scenarios, not demonstrated performance for these targets. Noise is held fixed to expose scaling; real architectures have architecture-specific noise and systematic errors."
+}

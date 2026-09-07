@@ -1,0 +1,24 @@
+{
+  "status": "idealized_architecture_scaling_comparison",
+  "required_snr": 3.0,
+  "best_modeled_scenario_per_target": [
+    {
+      "voc": "Toluene",
+      "architecture": "cavity_enhanced",
+      "scenario": "1000 m effective path idealized",
+      "snr_at_reference_concentration": 105.80530720893933,
+      "white_noise_equivalent_lod_ppb": 0.02523502903996498,
+      "background_transmission": 0.469252928083491
+    },
+    {
+      "voc": "X2_Butanone",
+      "architecture": "cavity_enhanced",
+      "scenario": "1000 m effective path idealized",
+      "snr_at_reference_concentration": 156.46016709802703,
+      "white_noise_equivalent_lod_ppb": 0.024159503790071476,
+      "background_transmission": 0.37687596318920724
+    }
+  ],
+  "warning": "Engineering scenarios, not demonstrated performance for these targets. Noise is held fixed to expose scaling; real architectures have architecture-specific noise and systematic errors.",
+  "decision": "Preconcentration-assisted sensing is the only modeled route that improves target-to-atmospheric-background ratio; path enhancement alone improves white-noise SNR but not intrinsic background discrimination."
+}

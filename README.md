@@ -75,3 +75,7 @@ The RADicA method required NIST 2023 mass-spectral similarity ≥80 and retentio
 At the best searched windows, the literature-mean target signals over 10 m are only about 1.06 ppm of transmission for toluene and 1.56 ppm for 2-butanone. A 3σ observation therefore requires idealized 1σ relative transmission noise below 0.353 and 0.522 ppm, respectively, while the combined H2O/CO2 optical-depth baseline must reproduce to roughly 47–53 ppm of its own value. These are necessary precision bounds, not demonstrated limits of detection. See `docs/NOISE_AND_DRIFT_BUDGET_2026-09-07.md`.
 
 ![Idealized optical noise budget](results/figures/noise_budget.png)
+
+An idealized architecture comparison shows that a 1000 m effective cavity can lower the white-noise-equivalent LOD if its noise is held fixed, but it does not relax the required H2O/CO2 background repeatability. A 100× preconcentration scenario with 80% target recovery and 1% residual atmospheric background gives a slightly higher modeled LOD of about 0.030–0.032 ppbv while improving target-to-atmospheric-background contrast by 8000×. The assumptions are sensitivity scenarios, not demonstrated device performance. See `docs/ARCHITECTURE_COMPARISON_2026-09-07.md`.
+
+![Idealized architecture comparison](results/figures/architecture_comparison.png)

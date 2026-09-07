@@ -26,5 +26,7 @@ results/*
 !results/identity_confidence.csv
 !results/noise_budget.csv
 !results/noise_budget_summary.json
+!results/architecture_comparison.csv
+!results/architecture_comparison_summary.json
 !results/figures/
 !results/figures/*.png

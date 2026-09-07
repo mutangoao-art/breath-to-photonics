@@ -32,5 +32,7 @@ results/*
 !results/preconcentrator_summary.json
 !results/benchtop_run_plan.csv
 !results/benchtop_run_plan_summary.json
+!results/benchtop_evaluation.csv
+!results/benchtop_evaluation_summary.json
 !results/figures/
 !results/figures/*.png

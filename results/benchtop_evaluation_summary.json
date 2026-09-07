@@ -1,0 +1,21 @@
+{
+  "status": "pending_missing_measurements",
+  "overall_decision": "not_evaluable",
+  "missing_counts": {
+    "actual_sample_flow_ml_min": 115,
+    "actual_sample_volume_ml": 115,
+    "actual_relative_humidity_percent": 115,
+    "actual_temperature_K": 115,
+    "actual_pressure_atm": 115,
+    "actual_desorption_volume_ml": 115,
+    "toluene_primary_pmol": 115,
+    "butanone_primary_pmol": 115,
+    "toluene_secondary_pmol": 18,
+    "butanone_secondary_pmol": 18,
+    "H2O_CO2_tau_pre_1030_75_cm-1": 14,
+    "H2O_CO2_tau_post_1030_75_cm-1": 14,
+    "H2O_CO2_tau_pre_939_20_cm-1": 14,
+    "H2O_CO2_tau_post_939_20_cm-1": 14
+  },
+  "completed_required_fields": false
+}

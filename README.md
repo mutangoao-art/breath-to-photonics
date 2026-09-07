@@ -85,3 +85,5 @@ A preconcentrator mass balance translates the preferred hybrid scenario into a 5
 ![Preconcentrator mass-balance scenarios](results/figures/preconcentrator.png)
 
 A locked 115-run benchtop protocol now tests the reference preconcentrator across 0.1–10 ppbv, dry to 90% RH, 0.5–2 L sample volumes, seven carryover pairs and dedicated atmospheric-residual measurements. Passing requires 70–130% recovery, ≤20% RSD, ≤0.02 ppbv blanks, ≤5% breakthrough at 500 mL and removal of at least 99% of the modeled H2O/CO2 optical depth. See `docs/BENCHTOP_VALIDATION_PROTOCOL_2026-09-07.md` and `results/benchtop_run_plan.csv`.
+
+An automated evaluator now checks completed run plans without substituting missing values. It calculates recovery, precision, humidity bias, low-level MDL, blanks, carryover, breakthrough, atmospheric residual and flow/volume errors, then returns `pass`, `conditional_pass`, `fail`, or `not_evaluable`. The current empty template correctly remains `not_evaluable`. See `docs/BENCHTOP_EVALUATOR_2026-09-07.md`.

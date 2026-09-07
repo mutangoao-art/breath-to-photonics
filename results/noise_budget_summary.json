@@ -1,0 +1,22 @@
+{
+  "status": "instrument_noise_and_background_repeatability_screen",
+  "required_snr": 3.0,
+  "targets": [
+    {
+      "voc": "Toluene",
+      "center_cm-1": 1030.75,
+      "target_attenuation_ppm": 1.0581084900485038,
+      "maximum_relative_transmission_noise_ppm": 0.3527028300161679,
+      "maximum_background_optical_depth_relative_error_ppm": 46.616017318736105
+    },
+    {
+      "voc": "X2_Butanone",
+      "center_cm-1": 939.2,
+      "target_attenuation_ppm": 1.5647228585047301,
+      "maximum_relative_transmission_noise_ppm": 0.5215742861682434,
+      "maximum_background_optical_depth_relative_error_ppm": 53.44883848269746
+    }
+  ],
+  "interpretation": "White-noise-equivalent screen at the best alternative window. It does not model wavelength drift, spectral fitting gain, averaging time, sampling losses, detector nonlinearity, or correlated breath-background errors.",
+  "warning": "These values are necessary idealized precision requirements, not demonstrated instrument performance or validated limits of detection."
+}

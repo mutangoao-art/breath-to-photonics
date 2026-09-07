@@ -1,0 +1,11 @@
+{
+  "source_table": "results/alternative_windows.csv",
+  "use_rank_within_voc": 1,
+  "required_snr": 3.0,
+  "reference_concentrations_ppb": {
+    "Toluene": 0.89,
+    "X2_Butanone": 1.26
+  },
+  "relative_transmission_noise_ppm_scenarios": [0.1, 1.0, 10.0, 100.0],
+  "interpretation": "White-noise-equivalent screen at the best alternative window. It does not model wavelength drift, spectral fitting gain, averaging time, sampling losses, detector nonlinearity, or correlated breath-background errors."
+}

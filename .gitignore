@@ -24,5 +24,7 @@ results/*
 !results/alternative_windows.csv
 !results/alternative_windows_summary.json
 !results/identity_confidence.csv
+!results/noise_budget.csv
+!results/noise_budget_summary.json
 !results/figures/
 !results/figures/*.png

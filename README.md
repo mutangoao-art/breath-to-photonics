@@ -71,3 +71,7 @@ A full search within the downloaded 650–1250 cm⁻¹ range finds lower-opacity
 ![Alternative spectral-window search](results/figures/alternative_windows.png)
 
 The RADicA method required NIST 2023 mass-spectral similarity ≥80 and retention-index agreement within ±20 for named compounds. However, the public files do not identify which individual VOCs belong to the 60 authentic-standard-confirmed MSI Level 1 entries versus the 247 Level 2 annotations. The five exploratory identities are therefore provisional for sensor design. See `docs/CHEMICAL_IDENTITY_AUDIT_2026-09-07.md` and `results/identity_confidence.csv`.
+
+At the best searched windows, the literature-mean target signals over 10 m are only about 1.06 ppm of transmission for toluene and 1.56 ppm for 2-butanone. A 3σ observation therefore requires idealized 1σ relative transmission noise below 0.353 and 0.522 ppm, respectively, while the combined H2O/CO2 optical-depth baseline must reproduce to roughly 47–53 ppm of its own value. These are necessary precision bounds, not demonstrated limits of detection. See `docs/NOISE_AND_DRIFT_BUDGET_2026-09-07.md`.
+
+![Idealized optical noise budget](results/figures/noise_budget.png)

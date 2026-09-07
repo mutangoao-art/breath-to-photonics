@@ -25,10 +25,10 @@ These changes were responses to observed evidence rather than parts of the initi
 
 Highest-priority scientific gaps are:
 
-1. Obtain or generate quantitative H2O and CO2 absorption at breath-relevant temperature, pressure, and humidity. Target-only instrument-resolution convolution is complete; interferent line data still require HITRAN access.
+1. Refine the quantitative H2O/CO2 baseline to breath temperature with line-strength scaling, line mixing, and water continuum. HITRAN lines and a 296 K first-pass screen are now complete; both current centers fail that baseline.
 2. Expand concentration evidence beyond the initial small asthma study. A first cross-study audit is complete and shows strong ambient sensitivity; robust asthma distributions and explicit non-detect modelling remain open.
 3. Audit GC-MS identity confidence for the exploratory annotations using retention indices and reference-standard evidence.
 4. Define an instrument noise/drift model and compare direct multipass, cavity-enhanced, and preconcentration-assisted architectures.
 5. Stop or redesign the target-selection claim if no clinically replicated and physically measurable target emerges. A defensible negative feasibility result remains an acceptable endpoint.
 
-The next recommended implementation step is the remaining part of item 1. HITRAN currently requires an account/API key; the code should keep external line data cached, versioned by metadata, and excluded from Git.
+The next recommended implementation step is a full-spectrum alternative-window search using the refined HITRAN model. External line data are cached with download metadata and excluded from Git.

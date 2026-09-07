@@ -19,5 +19,7 @@ results/*
 !results/quantitative_detectability.csv
 !results/resolution_sensitivity.csv
 !results/concentration_evidence.csv
+!results/hitran_interference_summary.json
+!results/hitran_interference_windows.csv
 !results/figures/
 !results/figures/*.png

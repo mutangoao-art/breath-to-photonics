@@ -61,3 +61,7 @@ Resolution broadening from approximately 2 to 20 cm⁻¹ retains about 86% of th
 ![Instrument-resolution sensitivity](results/figures/resolution_sensitivity.png)
 
 A cross-study concentration audit confirms a low-ppbv regime and, importantly, shows that 2-butanone and toluene can be comparable to or lower than room-air levels. Any eventual instrument must therefore support paired background measurement rather than absolute breath-only sensing. See `docs/CONCENTRATION_EVIDENCE_2026-09-06.md`.
+
+The manually downloaded HITRAN2024 H2O/CO2 lines enable a first quantitative interferent baseline. Under the declared 296 K, 1 atm, 5% H2O, 4% CO2, 10 m, and 2 cm⁻¹ assumptions, both exploratory windows are dominated by interferent optical depth. This baseline intentionally omits temperature rescaling, line mixing, water continuum, and non-Voigt effects, so it is a rejection screen rather than a final instrument simulation. See `docs/HITRAN_INTERFERENCE_BASELINE_2026-09-07.md`.
+
+![Quantitative HITRAN interferent baseline](results/figures/hitran_interference.png)

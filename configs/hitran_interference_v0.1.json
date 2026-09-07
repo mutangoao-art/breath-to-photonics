@@ -1,0 +1,37 @@
+{
+  "hitran_file": "6a9e3e2d/6a9e3e2d.par",
+  "download_id": "6a9e3e2d",
+  "download_date": "2026-09-07",
+  "wavenumber_range_cm-1": [650.0, 1250.0],
+  "temperature_K": 296.0,
+  "pressure_atm": 1.0,
+  "path_length_m": 10.0,
+  "instrument_fwhm_cm-1": 2.0,
+  "grid_step_cm-1": 0.05,
+  "line_wing_cm-1": 25.0,
+  "mole_fractions": {
+    "H2O": 0.05,
+    "CO2": 0.04
+  },
+  "windows": [
+    {
+      "voc": "Toluene",
+      "name": "toluene",
+      "center_cm-1": 726.0,
+      "target_concentration_ppb": 0.89,
+      "target_quant_file": "toluene_2cm-1_boxcar.jdx"
+    },
+    {
+      "voc": "X2_Butanone",
+      "name": "2-butanone",
+      "center_cm-1": 1174.0,
+      "target_concentration_ppb": 1.26,
+      "target_quant_file": "2-butanone_2cm-1_boxcar.jdx"
+    }
+  ],
+  "limitations": [
+    "296 K baseline uses HITRAN reference line intensities; temperature scaling to exhaled-breath conditions is not yet applied.",
+    "Lorentz pressure broadening is used; Doppler, line mixing, water continuum, and non-Voigt effects are omitted.",
+    "Mole fractions are declared engineering assumptions, not measurements from the RADicA cohort."
+  ]
+}

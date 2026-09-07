@@ -1,0 +1,24 @@
+{
+  "status": "quantitative_baseline_at_296K",
+  "download_id": "6a9e3e2d",
+  "hitran_line_count": 94240,
+  "molecule_line_counts": {
+    "H2O": 9013,
+    "CO2": 85227
+  },
+  "conditions": {
+    "temperature_K": 296.0,
+    "pressure_atm": 1.0,
+    "path_length_m": 10.0,
+    "instrument_fwhm_cm-1": 2.0,
+    "mole_fractions": {
+      "H2O": 0.05,
+      "CO2": 0.04
+    }
+  },
+  "limitations": [
+    "296 K baseline uses HITRAN reference line intensities; temperature scaling to exhaled-breath conditions is not yet applied.",
+    "Lorentz pressure broadening is used; Doppler, line mixing, water continuum, and non-Voigt effects are omitted.",
+    "Mole fractions are declared engineering assumptions, not measurements from the RADicA cohort."
+  ]
+}

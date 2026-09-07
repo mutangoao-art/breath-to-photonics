@@ -53,6 +53,9 @@ Gas-phase water (CAS 7732-18-5) and carbon dioxide (CAS 124-38-9) JCAMP records 
 
 - Intended source: HITRAN2024 line-by-line parameters for H2O and CO2, https://hitran.org/lbl/
 - Official calculation interface: HAPI, https://hitran.org/hapi/
-- Current status: not downloaded; HITRAN states that an account API key is required
+- Current status: manually downloaded on 2026-09-07; download ID `6a9e3e2d`
+- Local location: `data/raw/hitran/6a9e3e2d/` (excluded from Git)
+- Contents: 94,240 lines from 650.000776 to 1249.989269 cm⁻¹; 9,013 H2O lines and 85,227 CO2 lines, with all selected isotopologues
+- Accompanying `.bib`, `.bib.html`, and field-description text are preserved alongside the `.par` file
 - Reason for not substituting the cached NIST references: those H2O/CO2 files report absorbance without concentration and path metadata, so they cannot be scaled to humid-breath conditions
 - No credential should be committed; downloaded line data will remain under `data/raw/`

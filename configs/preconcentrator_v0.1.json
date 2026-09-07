@@ -1,0 +1,52 @@
+{
+  "source_table": "results/alternative_windows.csv",
+  "use_rank_within_voc": 1,
+  "baseline_path_m": 10.0,
+  "optical_path_m": 10.0,
+  "required_snr": 3.0,
+  "relative_transmission_noise_ppm": 1.0,
+  "temperature_K": 296.0,
+  "pressure_atm": 1.0,
+  "purge_time_min": 8.0,
+  "desorption_and_transfer_time_min": 5.0,
+  "reset_time_min": 5.0,
+  "reference_concentrations_ppb": {
+    "Toluene": 0.89,
+    "X2_Butanone": 1.26
+  },
+  "molar_masses_g_mol": {
+    "Toluene": 92.14,
+    "X2_Butanone": 72.11
+  },
+  "scenarios": [
+    {
+      "scenario": "conservative recovery",
+      "sample_volume_ml": 500.0,
+      "sample_flow_ml_min": 200.0,
+      "desorption_volume_ml": 10.0,
+      "recovery_fraction": 0.5
+    },
+    {
+      "scenario": "reference design",
+      "sample_volume_ml": 500.0,
+      "sample_flow_ml_min": 200.0,
+      "desorption_volume_ml": 5.0,
+      "recovery_fraction": 0.8
+    },
+    {
+      "scenario": "1 L sample",
+      "sample_volume_ml": 1000.0,
+      "sample_flow_ml_min": 200.0,
+      "desorption_volume_ml": 5.0,
+      "recovery_fraction": 0.8
+    },
+    {
+      "scenario": "2 L sample",
+      "sample_volume_ml": 2000.0,
+      "sample_flow_ml_min": 200.0,
+      "desorption_volume_ml": 5.0,
+      "recovery_fraction": 0.8
+    }
+  ],
+  "warning": "Ideal-gas and complete-mixing mass balance. Recovery, desorption volume, trap capacity, breakthrough, water removal, carryover and cycle overhead require experimental validation."
+}

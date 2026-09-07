@@ -79,3 +79,7 @@ At the best searched windows, the literature-mean target signals over 10 m are o
 An idealized architecture comparison shows that a 1000 m effective cavity can lower the white-noise-equivalent LOD if its noise is held fixed, but it does not relax the required H2O/CO2 background repeatability. A 100× preconcentration scenario with 80% target recovery and 1% residual atmospheric background gives a slightly higher modeled LOD of about 0.030–0.032 ppbv while improving target-to-atmospheric-background contrast by 8000×. The assumptions are sensitivity scenarios, not demonstrated device performance. See `docs/ARCHITECTURE_COMPARISON_2026-09-07.md`.
 
 ![Idealized architecture comparison](results/figures/architecture_comparison.png)
+
+A preconcentrator mass balance translates the preferred hybrid scenario into a 500 mL sample, 5 mL desorption volume and 80% recovery. It predicts an 80× net enrichment, low-ng recovered target masses, approximately 71–101 ppbv desorbed concentrations and a 20.5 minute idealized cycle. These values define a benchtop recovery and breakthrough experiment; they do not demonstrate sorbent performance. See `docs/PRECONCENTRATOR_MASS_BALANCE_2026-09-07.md`.
+
+![Preconcentrator mass-balance scenarios](results/figures/preconcentrator.png)

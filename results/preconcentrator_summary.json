@@ -1,0 +1,31 @@
+{
+  "status": "preconcentrator_mass_balance_and_timing_screen",
+  "reference_design": [
+    {
+      "voc": "Toluene",
+      "sample_volume_ml": 500.0,
+      "desorption_volume_ml": 5.0,
+      "recovery_fraction": 0.8,
+      "net_enrichment_factor": 80.0,
+      "recovered_target_pmol": 14.656852396873848,
+      "recovered_target_mass_ng": 1.3504823798479564,
+      "desorbed_concentration_ppb": 71.2,
+      "white_noise_equivalent_lod_ppb": 0.03154345253937511,
+      "cycle_time_min": 20.5
+    },
+    {
+      "voc": "X2_Butanone",
+      "sample_volume_ml": 500.0,
+      "desorption_volume_ml": 5.0,
+      "recovery_fraction": 0.8,
+      "net_enrichment_factor": 80.0,
+      "recovered_target_pmol": 20.75015058433826,
+      "recovered_target_mass_ng": 1.496293358636632,
+      "desorbed_concentration_ppb": 100.8,
+      "white_noise_equivalent_lod_ppb": 0.030198907215407907,
+      "cycle_time_min": 20.5
+    }
+  ],
+  "warning": "Ideal-gas and complete-mixing mass balance. Recovery, desorption volume, trap capacity, breakthrough, water removal, carryover and cycle overhead require experimental validation.",
+  "decision": "A 500 mL to 5 mL, 80% recovery cycle reproduces the prior 80x net-gain scenario in about 20.5 minutes, but analyte recovery and water management are now the dominant experimental unknowns."
+}

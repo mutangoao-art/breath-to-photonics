@@ -28,5 +28,7 @@ results/*
 !results/noise_budget_summary.json
 !results/architecture_comparison.csv
 !results/architecture_comparison_summary.json
+!results/preconcentrator.csv
+!results/preconcentrator_summary.json
 !results/figures/
 !results/figures/*.png

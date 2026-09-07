@@ -4,6 +4,25 @@ This project asks one engineering question:
 
 > Which asthma-associated breath volatile organic compounds (VOCs) are reproducible across independent cohorts and also plausible targets for compact mid-infrared sensing?
 
+## Outcome
+
+The project reached a reproducible **no-go decision for asthma-diagnostic hardware from the current target set**. None of 142 VOCs met the locked cross-cohort replication rule; compound-level standard confirmation remains unresolved; and the best quantitative windows for the two modelled exploratory compounds remain strongly dominated by H2O and CO2.
+
+That negative result is the engineering contribution: it identifies unsupported assumptions before fabrication and defines the smallest experiment capable of changing the decision. A limited preconcentrator benchtop study remains conditionally justified as methods validation, without a diagnostic claim.
+
+```mermaid
+flowchart LR
+    A[Clinical data audit] --> B[Cross-cohort replication]
+    B -->|0 of 142| C[No validated asthma target]
+    C -. exploratory analysis .-> D[Gas-phase spectra]
+    D --> E[H2O and CO2 interference]
+    E --> F[Noise and architecture bounds]
+    F --> G[No-go: diagnostic hardware]
+    F -. conditional .-> H[Preconcentrator benchtop test]
+```
+
+For a concise overview, see the [application project brief](docs/APPLICATION_PROJECT_BRIEF.md). Ready-to-tailor CV, statement, interview, and prospective-advisor language is collected in [application materials](docs/APPLICATION_MATERIALS.md).
+
 The first milestone is deliberately narrow: download and audit the public RADicA breathomics release before choosing any statistical model.
 
 ## Planned evidence chain

@@ -8,10 +8,11 @@
 - Intended use: participant-level VOC signals, asthma/not-asthma labels, independent cohorts, and matched ambient-air samples
 - Local location: `data/raw/radica/`
 - Paper data statement: metabolomic data and associated metadata are public; additional anonymised clinical data require an approved request and data-access agreement
-- Author analysis code: https://github.com/aturlo/RADicA-breath-VOC-analysis
-- Expected public filenames confirmed by the author code: `RADicA_VOC_raw_peak_data.csv` and `RADicA_VOC_metadata.csv`
+- Paper-linked author analysis code: https://github.com/aturlo/RADicA
+- Public filenames confirmed in the downloaded release: `RADicA_VOC_raw_peak_data.csv` and `RADicA_VOC_metadata.csv`
 - Local location: `data/raw/radica/` (manually downloaded; excluded from Git)
 - Status: required structures are present; split design needs review because three participants overlap B1/B2; see `docs/DATA_AUDIT_2026-09-06.md`
+- Chemical identification: the paper reports NIST 2023 similarity ≥80, retention-index agreement within ±20, and 60/247/6 compounds at MSI Levels 1/2/3, respectively. The public data and supplementary files do not expose the per-compound level or authentic-standard mapping; see `docs/CHEMICAL_IDENTITY_AUDIT_2026-09-07.md`.
 
 No eligibility claim is made until `results/data_audit.json` confirms the actual public files and fields.
 

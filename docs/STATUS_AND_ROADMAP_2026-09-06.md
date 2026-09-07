@@ -27,8 +27,8 @@ Highest-priority scientific gaps are:
 
 1. Expand and refine the quantitative H2O/CO2 model. HITRAN lines, a 296 K first-pass screen, and an alternative-window search over 650–1250 cm⁻¹ are complete; no viable single window emerged. Remaining work includes other spectral ranges, temperature scaling, line mixing, and water continuum.
 2. Expand concentration evidence beyond the initial small asthma study. A first cross-study audit is complete and shows strong ambient sensitivity; robust asthma distributions and explicit non-detect modelling remain open.
-3. Audit GC-MS identity confidence for the exploratory annotations using retention indices and reference-standard evidence.
+3. Resolve compound-level authentic-standard status. The public-evidence audit is complete: all five named candidates satisfy the study's reported NIST/retention-index framework, but the public release does not map individual compounds to MSI Level 1 versus Level 2. See `docs/CHEMICAL_IDENTITY_AUDIT_2026-09-07.md`.
 4. Define an instrument noise/drift model and compare direct multipass, cavity-enhanced, and preconcentration-assisted architectures.
 5. Stop or redesign the target-selection claim if no clinically replicated and physically measurable target emerges. A defensible negative feasibility result remains an acceptable endpoint.
 
-The next recommended implementation step is a full-spectrum alternative-window search using the refined HITRAN model. External line data are cached with download metadata and excluded from Git.
+The next recommended implementation step is to define a measured noise/drift and background-subtraction budget before comparing optical architectures. Expanding the spectral search remains useful only if a candidate clears both clinical replication and chemical-identity gates. External line data are cached with download metadata and excluded from Git.

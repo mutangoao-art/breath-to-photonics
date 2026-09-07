@@ -1,0 +1,6 @@
+radica_field,standard_identity,cas,study_level_range,nist_2023_similarity_threshold,retention_index_tolerance,authentic_standard_confirmation,exact_msi_level_publicly_resolvable,identity_status_for_sensor_design,required_next_evidence
+X2_Butanone,2-Butanone,78-93-3,MSI Level 1 or 2,80,20,Not reported per compound,No,Provisional identity,Obtain the RADicA library entry or rerun an authentic standard under the RADicA TD-GC-MS method
+Toluene,Toluene,108-88-3,MSI Level 1 or 2,80,20,Not reported per compound,No,Provisional identity,Obtain the RADicA library entry or rerun an authentic standard under the RADicA TD-GC-MS method
+Decane,Decane,124-18-5,MSI Level 1 or 2,80,20,Not reported per compound,No,Provisional identity,Obtain the RADicA library entry or rerun an authentic standard under the RADicA TD-GC-MS method
+X2_Heptanone,2-Heptanone,110-43-0,MSI Level 1 or 2,80,20,Not reported per compound,No,Provisional identity,Obtain the RADicA library entry or rerun an authentic standard under the RADicA TD-GC-MS method
+Benzene._1.4_dichloro_,"1,4-Dichlorobenzene",106-46-7,MSI Level 1 or 2,80,20,Not reported per compound,No,Provisional identity,Obtain the RADicA library entry or rerun an authentic standard under the RADicA TD-GC-MS method

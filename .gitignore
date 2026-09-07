@@ -23,5 +23,6 @@ results/*
 !results/hitran_interference_windows.csv
 !results/alternative_windows.csv
 !results/alternative_windows_summary.json
+!results/identity_confidence.csv
 !results/figures/
 !results/figures/*.png

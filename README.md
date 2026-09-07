@@ -69,3 +69,5 @@ The manually downloaded HITRAN2024 H2O/CO2 lines enable a first quantitative int
 A full search within the downloaded 650–1250 cm⁻¹ range finds lower-opacity alternatives near 1030.75 cm⁻¹ for toluene and 939.20 cm⁻¹ for 2-butanone. Even there, interferent optical depth remains roughly 7,150 and 6,240 times the target signal, respectively; these are search candidates rather than viable windows. See `docs/ALTERNATIVE_WINDOW_SEARCH_2026-09-07.md`.
 
 ![Alternative spectral-window search](results/figures/alternative_windows.png)
+
+The RADicA method required NIST 2023 mass-spectral similarity ≥80 and retention-index agreement within ±20 for named compounds. However, the public files do not identify which individual VOCs belong to the 60 authentic-standard-confirmed MSI Level 1 entries versus the 247 Level 2 annotations. The five exploratory identities are therefore provisional for sensor design. See `docs/CHEMICAL_IDENTITY_AUDIT_2026-09-07.md` and `results/identity_confidence.csv`.

@@ -21,5 +21,7 @@ results/*
 !results/concentration_evidence.csv
 !results/hitran_interference_summary.json
 !results/hitran_interference_windows.csv
+!results/alternative_windows.csv
+!results/alternative_windows_summary.json
 !results/figures/
 !results/figures/*.png

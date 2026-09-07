@@ -65,3 +65,7 @@ A cross-study concentration audit confirms a low-ppbv regime and, importantly, s
 The manually downloaded HITRAN2024 H2O/CO2 lines enable a first quantitative interferent baseline. Under the declared 296 K, 1 atm, 5% H2O, 4% CO2, 10 m, and 2 cm⁻¹ assumptions, both exploratory windows are dominated by interferent optical depth. This baseline intentionally omits temperature rescaling, line mixing, water continuum, and non-Voigt effects, so it is a rejection screen rather than a final instrument simulation. See `docs/HITRAN_INTERFERENCE_BASELINE_2026-09-07.md`.
 
 ![Quantitative HITRAN interferent baseline](results/figures/hitran_interference.png)
+
+A full search within the downloaded 650–1250 cm⁻¹ range finds lower-opacity alternatives near 1030.75 cm⁻¹ for toluene and 939.20 cm⁻¹ for 2-butanone. Even there, interferent optical depth remains roughly 7,150 and 6,240 times the target signal, respectively; these are search candidates rather than viable windows. See `docs/ALTERNATIVE_WINDOW_SEARCH_2026-09-07.md`.
+
+![Alternative spectral-window search](results/figures/alternative_windows.png)

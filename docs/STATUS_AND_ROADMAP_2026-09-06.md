@@ -25,7 +25,7 @@ These changes were responses to observed evidence rather than parts of the initi
 
 Highest-priority scientific gaps are:
 
-1. Refine the quantitative H2O/CO2 baseline to breath temperature with line-strength scaling, line mixing, and water continuum. HITRAN lines and a 296 K first-pass screen are now complete; both current centers fail that baseline.
+1. Expand and refine the quantitative H2O/CO2 model. HITRAN lines, a 296 K first-pass screen, and an alternative-window search over 650–1250 cm⁻¹ are complete; no viable single window emerged. Remaining work includes other spectral ranges, temperature scaling, line mixing, and water continuum.
 2. Expand concentration evidence beyond the initial small asthma study. A first cross-study audit is complete and shows strong ambient sensitivity; robust asthma distributions and explicit non-detect modelling remain open.
 3. Audit GC-MS identity confidence for the exploratory annotations using retention indices and reference-standard evidence.
 4. Define an instrument noise/drift model and compare direct multipass, cavity-enhanced, and preconcentration-assisted architectures.

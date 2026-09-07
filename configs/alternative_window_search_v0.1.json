@@ -1,0 +1,9 @@
+{
+  "hitran_config": "configs/hitran_interference_v0.1.json",
+  "search_range_cm-1": [650.0, 1250.0],
+  "minimum_relative_peak_prominence": 0.03,
+  "minimum_peak_spacing_cm-1": 4.0,
+  "maximum_rank_per_target": 10,
+  "score_floor_optical_depth": 1e-8,
+  "warning": "The score is an engineering search proxy at the declared 296 K baseline, not selectivity or LOD."
+}

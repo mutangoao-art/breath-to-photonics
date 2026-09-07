@@ -1,0 +1,30 @@
+{
+  "status": "alternative_window_search_at_296K",
+  "search_range_cm-1": [
+    650.0,
+    1250.0
+  ],
+  "best_windows": [
+    {
+      "voc": "Toluene",
+      "center_cm-1": 1030.75,
+      "center_um": 9.7017,
+      "target_optical_depth": 1.0581090498528298e-06,
+      "H2O_optical_depth": 0.0027680367476799685,
+      "CO2_optical_depth": 0.004798096888448091,
+      "background_transmission": 0.9924624175003554,
+      "search_score": 0.000138793752286382
+    },
+    {
+      "voc": "X2_Butanone",
+      "center_cm-1": 939.2,
+      "center_um": 10.6474,
+      "target_optical_depth": 1.564724082668153e-06,
+      "H2O_optical_depth": 0.000193271731345574,
+      "CO2_optical_depth": 0.009565119826434872,
+      "background_transmission": 0.9902890670464483,
+      "search_score": 0.00015878923846652975
+    }
+  ],
+  "warning": "The score is an engineering search proxy at the declared 296 K baseline, not selectivity or LOD."
+}

@@ -65,7 +65,13 @@ def lorentz_cross_section(
     for line_center, intensity, gamma_air, gamma_self, delta_air in numeric:
         gamma = pressure_atm * (gamma_air * air_fraction + gamma_self * mole_fraction)
         center = line_center + pressure_atm * air_fraction * delta_air
-        output += intensity * gamma / (np.pi * ((grid - center) ** 2 + gamma**2))
+        start = int(np.searchsorted(grid, center - wing_cm1, side="left"))
+        stop = int(np.searchsorted(grid, center + wing_cm1, side="right"))
+        if start < stop:
+            local_grid = grid[start:stop]
+            output[start:stop] += intensity * gamma / (
+                np.pi * ((local_grid - center) ** 2 + gamma**2)
+            )
     return output
 
 

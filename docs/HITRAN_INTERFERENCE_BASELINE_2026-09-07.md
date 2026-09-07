@@ -22,8 +22,8 @@ These mole fractions are transparent engineering assumptions rather than measure
 
 | Window | Dominant interferent | Interferent optical depth | Target optical depth | Interferent/target ratio | Baseline transmission |
 |---|---|---:|---:|---:|---:|
-| Toluene, 726 cm⁻¹ | CO2 | 1.302 | 7.53×10⁻⁶ | 173,010 | 27.2% |
-| 2-butanone, 1174 cm⁻¹ | H2O | 0.2256 | 7.78×10⁻⁶ | 29,001 | 79.8% |
+| Toluene, 726 cm⁻¹ | CO2 | 1.235 | 7.53×10⁻⁶ | 164,129 | 29.1% |
+| 2-butanone, 1174 cm⁻¹ | H2O | 0.2255 | 7.78×10⁻⁶ | 28,997 | 79.8% |
 
 Both previously selected windows fail this first quantitative interference screen. At 726 cm⁻¹, the simplified CO2 baseline absorbs most of the light before the ppbv toluene contribution is considered. At 1174 cm⁻¹, the water optical depth is approximately 29,000 times the target optical depth.
 

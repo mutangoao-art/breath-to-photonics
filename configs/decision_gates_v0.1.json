@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "radica_audit": "results/radica_audit.json",
+    "candidate_summary": "results/candidate_summary.json",
+    "spectral_summary": "results/spectral_summary.json",
+    "quantitative_summary": "results/quantitative_summary.json",
+    "identity_confidence": "results/identity_confidence.csv",
+    "alternative_windows": "results/alternative_windows.csv",
+    "noise_budget": "results/noise_budget_summary.json",
+    "preconcentrator": "results/preconcentrator_summary.json",
+    "benchtop_evaluation": "results/benchtop_evaluation_summary.json"
+  },
+  "policy": {
+    "minimum_replicated_clinical_targets": 1,
+    "maximum_interferent_to_target_ratio_for_clean_window": 1.0,
+    "required_snr": 3.0,
+    "maximum_identity_unresolved_targets_for_hardware_lock": 0
+  }
+}

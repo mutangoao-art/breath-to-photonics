@@ -23,6 +23,8 @@ These changes were responses to observed evidence rather than parts of the initi
 
 ## Remaining work
 
+The computational feasibility phase is now closed by the consolidated decision gates. The items below are no longer an open-ended modelling backlog: only physical benchtop validation is an active next step. The diagnostic-hardware route remains closed unless independent clinical replication, authentic-standard identity confirmation, and quantitative sensing feasibility are all newly established. See `docs/CONSOLIDATED_DECISION_2026-09-07.md`.
+
 Highest-priority scientific gaps are:
 
 1. Expand and refine the quantitative H2O/CO2 model. HITRAN lines, a 296 K first-pass screen, and an alternative-window search over 650–1250 cm⁻¹ are complete; no viable single window emerged. Remaining work includes other spectral ranges, temperature scaling, line mixing, and water continuum.
@@ -32,4 +34,4 @@ Highest-priority scientific gaps are:
 5. Validate the preconcentrator experimentally. A mass-balance and timing screen identifies a 500 mL to 5 mL, 80% recovery reference design. A locked 115-run protocol and automated acceptance evaluator are complete. Physical execution remains open, and the current unfilled plan correctly returns `not_evaluable`. See `docs/PRECONCENTRATOR_MASS_BALANCE_2026-09-07.md`, `docs/BENCHTOP_VALIDATION_PROTOCOL_2026-09-07.md`, and `docs/BENCHTOP_EVALUATOR_2026-09-07.md`.
 6. Stop or redesign the target-selection claim if no clinically replicated and physically measurable target emerges. A defensible negative feasibility result remains an acceptable endpoint.
 
-The next step requires laboratory hardware and certified standards: execute the benchtop protocol beginning with system blanks and the 500 mL recovery block. Before hardware is available, useful work should shift to a consolidated decision report rather than adding unsupported model detail. Expanding the spectral search remains useful only if a candidate clears both clinical replication and chemical-identity gates.
+The next step requires laboratory hardware and certified standards: execute the benchtop protocol beginning with system blanks and the 500 mL recovery block. If those resources are unavailable, stop at the documented negative feasibility result. Expanding the spectral search remains useful only if a candidate clears both clinical replication and chemical-identity gates.

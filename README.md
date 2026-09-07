@@ -34,7 +34,11 @@ Raw public data are not committed. See `data/SOURCES.md` for provenance and down
 
 For the distinction between the original plan, evidence-driven adjustments, and remaining work, see `docs/STATUS_AND_ROADMAP_2026-09-06.md`.
 
+For the final computational-stage go/no-go decision, see `docs/CONSOLIDATED_DECISION_2026-09-07.md`.
+
 ## Current status
+
+The consolidated decision is **not to build an asthma-diagnostic photonic instrument from the current targets**. The analysis is nevertheless useful: it is a reproducible negative feasibility result that identifies failures in clinical replication, compound-level identity confirmation, and atmospheric-window selectivity before hardware expenditure. Only a small, non-diagnostic benchtop preconcentrator validation remains conditionally justified; without laboratory hardware and certified standards, the project can defensibly stop at this result. See `docs/CONSOLIDATED_DECISION_2026-09-07.md` and `results/decision_gates.csv`.
 
 The manually downloaded RADicA release passed the structural audit: 112 participants, 346 participant-visits, matched MaskBG/S1/S2 samples, and 142 shared processed VOC columns across B1 and B2. See `docs/DATA_AUDIT_2026-09-06.md`.
 

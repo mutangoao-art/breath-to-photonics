@@ -1,0 +1,10 @@
+gate,status,evidence,implication,source
+public_clinical_data_integrity,pass,"Required files, labels, matched triplets and processed matrices passed; three overlapping participants were removed from validation.",The public release is usable for the locked analysis after overlap mitigation.,results/radica_audit.json; results/candidate_summary.json
+cross_cohort_clinical_replication,fail,0 of 142 tested VOCs met the locked replication rule.,No current VOC can be called a validated asthma biomarker.,results/candidate_summary.json
+experimental_gas_phase_reference,pass,Verified gas-phase NIST spectra exist for 5 exploratory candidates.,"Band-location analysis is supported, but amplitudes are not mutually quantitative.",results/spectral_summary.json
+quantitative_target_spectra,partial,Compatible NIST QUANT-IR coverage is 2/5.,Only 2-butanone and toluene can enter the current quantitative model.,results/quantitative_summary.json
+compound_level_identity_confirmation,blocked,Authentic-standard/MSI Level 1 status is unresolved for 5 of 5 exploratory targets.,A molecular target must not be frozen for hardware without standard confirmation.,results/identity_confidence.csv
+clean_atmospheric_window,fail,"The best modeled H2O+CO2 to target optical-depth ratio is 6,236:1.",No clean single window was found in the downloaded 650–1250 cm-1 range.,results/alternative_windows.csv
+direct_10m_optical_detection,fail,"At 1 ppm relative transmission noise, the largest 10 m target SNR is 1.56, below the required 3.",Direct 10 m transmission is not supported at the literature mean concentrations.,results/noise_budget_summary.json
+preconcentration_assisted_feasibility,conditional,"The 500 mL to 5 mL, 80% recovery scenario predicts idealized LODs of 0.030–0.032 ppbv.","The route is physically plausible on paper, but recovery and water removal dominate uncertainty.",results/preconcentrator_summary.json
+benchtop_validation,pending,Current evaluator decision: not_evaluable.,Certified-standard hardware measurements are required before optical integration.,results/benchtop_evaluation_summary.json

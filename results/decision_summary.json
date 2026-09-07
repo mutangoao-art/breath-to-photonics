@@ -1,0 +1,15 @@
+{
+  "status": "consolidated_project_decision",
+  "gate_counts": {
+    "fail": 3,
+    "pass": 2,
+    "partial": 1,
+    "blocked": 1,
+    "conditional": 1,
+    "pending": 1
+  },
+  "diagnostic_hardware_decision": "do_not_build_for_asthma_diagnosis",
+  "methods_prototype_decision": "conditional_small_benchtop_validation_only",
+  "reason": "Clinical replication failed, compound-level standard confirmation is unresolved, and no clean atmospheric window was found. A limited preconcentrator experiment can still test the measurement concept without making a diagnostic claim.",
+  "next_action": "Run system blanks and the 500 mL certified-standard recovery block if laboratory hardware and safety approvals are available; otherwise stop at the documented negative feasibility result."
+}

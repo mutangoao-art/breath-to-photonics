@@ -83,3 +83,5 @@ An idealized architecture comparison shows that a 1000 m effective cavity can lo
 A preconcentrator mass balance translates the preferred hybrid scenario into a 500 mL sample, 5 mL desorption volume and 80% recovery. It predicts an 80× net enrichment, low-ng recovered target masses, approximately 71–101 ppbv desorbed concentrations and a 20.5 minute idealized cycle. These values define a benchtop recovery and breakthrough experiment; they do not demonstrate sorbent performance. See `docs/PRECONCENTRATOR_MASS_BALANCE_2026-09-07.md`.
 
 ![Preconcentrator mass-balance scenarios](results/figures/preconcentrator.png)
+
+A locked 115-run benchtop protocol now tests the reference preconcentrator across 0.1–10 ppbv, dry to 90% RH, 0.5–2 L sample volumes, seven carryover pairs and dedicated atmospheric-residual measurements. Passing requires 70–130% recovery, ≤20% RSD, ≤0.02 ppbv blanks, ≤5% breakthrough at 500 mL and removal of at least 99% of the modeled H2O/CO2 optical depth. See `docs/BENCHTOP_VALIDATION_PROTOCOL_2026-09-07.md` and `results/benchtop_run_plan.csv`.

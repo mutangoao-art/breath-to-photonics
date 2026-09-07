@@ -30,5 +30,7 @@ results/*
 !results/architecture_comparison_summary.json
 !results/preconcentrator.csv
 !results/preconcentrator_summary.json
+!results/benchtop_run_plan.csv
+!results/benchtop_run_plan_summary.json
 !results/figures/
 !results/figures/*.png

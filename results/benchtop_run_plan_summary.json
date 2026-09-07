@@ -1,0 +1,28 @@
+{
+  "status": "locked_benchtop_validation_plan",
+  "total_runs": 115,
+  "runs_by_phase": {
+    "system_blank": 6,
+    "recovery_precision": 63,
+    "breakthrough": 18,
+    "carryover": 14,
+    "background_residual": 14
+  },
+  "acceptance_criteria": {
+    "recovery_percent_range": [
+      70.0,
+      130.0
+    ],
+    "recovery_rsd_percent_max": 20.0,
+    "humidity_bias_percent_max": 20.0,
+    "white_noise_equivalent_lod_ppb_max": 0.1,
+    "blank_ppb_max": 0.02,
+    "carryover_percent_of_previous_max": 1.0,
+    "breakthrough_percent_at_500ml_max": 5.0,
+    "breakthrough_percent_at_1000ml_max": 10.0,
+    "post_treatment_background_optical_depth_fraction_max": 0.01,
+    "sample_flow_error_percent_max": 5.0,
+    "sample_volume_error_percent_max": 5.0
+  },
+  "warning": "Project go/no-go criteria, not a regulatory validated method. The laboratory must apply its own risk assessment, SDS, ventilation, compressed-gas and waste procedures."
+}
